@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		0593E6F02146ED6E0029758D /* DeepLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 0593E6EE2146ED6E0029758D /* DeepLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0593E7012146F4170029758D /* DPLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0593E6FE2146F4170029758D /* DPLayoutConstraint.swift */; };
+		0593E7022146F4170029758D /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0593E6FF2146F4170029758D /* Device.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0593E6EB2146ED6E0029758D /* DeepLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeepLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0593E6EE2146ED6E0029758D /* DeepLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeepLayout.h; sourceTree = "<group>"; };
 		0593E6EF2146ED6E0029758D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0593E6FE2146F4170029758D /* DPLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPLayoutConstraint.swift; sourceTree = "<group>"; };
+		0593E6FF2146F4170029758D /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,8 @@
 			isa = PBXGroup;
 			children = (
 				0593E6EE2146ED6E0029758D /* DeepLayout.h */,
+				0593E6FF2146F4170029758D /* Device.swift */,
+				0593E6FE2146F4170029758D /* DPLayoutConstraint.swift */,
 				0593E6EF2146ED6E0029758D /* Info.plist */,
 			);
 			path = DeepLayout;
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					0593E6EA2146ED6E0029758D = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -130,6 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0593E7012146F4170029758D /* DPLayoutConstraint.swift in Sources */,
+				0593E7022146F4170029758D /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +268,7 @@
 		0593E6F42146ED6E0029758D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -276,6 +286,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.free.DeepLayout;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +295,7 @@
 		0593E6F52146ED6E0029758D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
