@@ -10,6 +10,8 @@
 		0593E6F02146ED6E0029758D /* DeepLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 0593E6EE2146ED6E0029758D /* DeepLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0593E7012146F4170029758D /* DPLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0593E6FE2146F4170029758D /* DPLayoutConstraint.swift */; };
 		0593E7022146F4170029758D /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0593E6FF2146F4170029758D /* Device.swift */; };
+		05ABF7C121483BB70043E264 /* DPTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ABF7C021483BB70043E264 /* DPTitleLabel.swift */; };
+		05ABF7C321483D360043E264 /* DPButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ABF7C221483D360043E264 /* DPButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +20,8 @@
 		0593E6EF2146ED6E0029758D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0593E6FE2146F4170029758D /* DPLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPLayoutConstraint.swift; sourceTree = "<group>"; };
 		0593E6FF2146F4170029758D /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		05ABF7C021483BB70043E264 /* DPTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPTitleLabel.swift; sourceTree = "<group>"; };
+		05ABF7C221483D360043E264 /* DPButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +39,6 @@
 			isa = PBXGroup;
 			children = (
 				0593E6ED2146ED6E0029758D /* DeepLayout */,
-				0593E6EC2146ED6E0029758D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,6 +48,7 @@
 				0593E6EB2146ED6E0029758D /* DeepLayout.framework */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		0593E6ED2146ED6E0029758D /* DeepLayout */ = {
@@ -53,7 +57,10 @@
 				0593E6EE2146ED6E0029758D /* DeepLayout.h */,
 				0593E6FF2146F4170029758D /* Device.swift */,
 				0593E6FE2146F4170029758D /* DPLayoutConstraint.swift */,
+				05ABF7C021483BB70043E264 /* DPTitleLabel.swift */,
+				05ABF7C221483D360043E264 /* DPButton.swift */,
 				0593E6EF2146ED6E0029758D /* Info.plist */,
+				0593E6EC2146ED6E0029758D /* Products */,
 			);
 			path = DeepLayout;
 			sourceTree = "<group>";
@@ -137,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05ABF7C121483BB70043E264 /* DPTitleLabel.swift in Sources */,
+				05ABF7C321483D360043E264 /* DPButton.swift in Sources */,
 				0593E7012146F4170029758D /* DPLayoutConstraint.swift in Sources */,
 				0593E7022146F4170029758D /* Device.swift in Sources */,
 			);
