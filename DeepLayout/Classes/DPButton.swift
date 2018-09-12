@@ -9,8 +9,8 @@
 @IBDesignable
 open class DPButton: UIButton {
     
-    @IBInspectable public var inch4: CGFloat = 0.0 {
-        didSet { applyNow(size: .screen4Inch, newSize: inch4) }
+    @IBInspectable public var fontSizeInch4: CGFloat = 0.0 {
+        didSet { applyNow(size: .screen4Inch, newSize: fontSizeInch4) }
     }
     @IBInspectable public var inch4_7: CGFloat = 0.0 {
         didSet { applyNow(size: .screen4_7Inch, newSize: inch4_7) }
