@@ -22,7 +22,6 @@ public class DPDevice {
     
     static fileprivate func getVersion(code: String) -> DPVersion {
         switch code {
-            /*** iPhone ***/
         case "iPhone3,1", "iPhone3,2", "iPhone3,3":      return .iPhone4
         case "iPhone4,1", "iPhone4,2", "iPhone4,3":      return .iPhone4S
         case "iPhone5,1", "iPhone5,2":                   return .iPhone5
@@ -39,7 +38,6 @@ public class DPDevice {
         case "iPhone10,2", "iPhone10,5":                 return .iPhone8Plus
         case "iPhone10,3", "iPhone10,6":                 return .iPhoneX
             
-            /*** iPad ***/
         case "iPad1,1":                                  return .iPad1
         case "iPad2,1", "iPad2,2", "iPad2,3", "iPad2,4": return .iPad2
         case "iPad3,1", "iPad3,2", "iPad3,3":            return .iPad3
@@ -55,7 +53,6 @@ public class DPDevice {
         case "iPad7,3", "iPad7,4":                       return .iPadPro10_5Inch
         case "iPad6,3", "iPad6,4":                       return .iPadPro9_7Inch
             
-            /*** iPod ***/
         case "iPod1,1":                                  return .iPodTouch1Gen
         case "iPod2,1":                                  return .iPodTouch2Gen
         case "iPod3,1":                                  return .iPodTouch3Gen
@@ -63,7 +60,6 @@ public class DPDevice {
         case "iPod5,1":                                  return .iPodTouch5Gen
         case "iPod7,1":                                  return .iPodTouch6Gen
             
-            /*** Simulator ***/
         case "i386", "x86_64":                           return .simulator
             
         default:                                         return .unknown
@@ -150,7 +146,6 @@ public class DPDevice {
 }
 
 public enum DPVersion: String {
-    /*** iPhone ***/
     case iPhone4
     case iPhone4S
     case iPhone5
@@ -167,7 +162,6 @@ public enum DPVersion: String {
     case iPhone8Plus
     case iPhoneX
     
-    /*** iPad ***/
     case iPad1
     case iPad2
     case iPad3
@@ -183,7 +177,6 @@ public enum DPVersion: String {
     case iPadPro10_5Inch
     case iPadPro12_9Inch
     
-    /*** iPod ***/
     case iPodTouch1Gen
     case iPodTouch2Gen
     case iPodTouch3Gen
@@ -191,10 +184,8 @@ public enum DPVersion: String {
     case iPodTouch5Gen
     case iPodTouch6Gen
     
-    /*** simulator ***/
     case simulator
     
-    /*** unknown ***/
     case unknown
 }
 
