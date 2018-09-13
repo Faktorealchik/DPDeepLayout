@@ -41,4 +41,4 @@ Use `.storyboard`, set class of `layout` object to DPLayoutConstraint, then you 
 ## License
 
 `DPDeepLayout` is released under the MIT license.
-See [LICENSE.md](LICENSE.md)for details.
+See [LICENSE.md](./LICENSE) for details.
