@@ -2,32 +2,43 @@
 
 ```DPDeepLayout``` is a layout that will help you to create depend on ```device-sizes``` screens. You will easily create different layout for usual devices.
 
-## Getting Started
-
 ### Prerequisites
+
+- iOS 8.0+
 
 ### Installing
 
-## Contributing
+### CocoaPods
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+`DPDeepLayout` is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
 
-## Versioning
+```
+pod 'DeepLayout', '~> 0.0'
+```
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+## Getting Started
 
-## Authors
+##### Via code
 
-* **Alexandr Nesterov** - *Initial work* - [Faktorealchik](https://github.com/Faktorealchik)
+```swift
+import DeepLayout
+```
 
-See also the list of [contributors](https://github.com/Faktorealchik/DPDeepLayout/contributors) who participated in this project.
+```swift
+if DPDevice.size() > .screen4Inch {
+// then set constraint as you want
+}
+```
+
+##### Interface Builder
+
+Use `.storyboard`, set class of `layout` object to DPLayoutConstraint, then you can add new constraints
+
+![demo](https://imgur.com/XK1F84L.png)
+![demo2](https://imgur.com/ooADucf.png)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+`DPDeepLayout` is released under the MIT license.
+See [LICENSE.md](LICENSE.md)for details.
